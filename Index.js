@@ -6,9 +6,6 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }))
 app.use(cors())
 
-// app.get("/Login", cors(), (req, res) => {
-
-// })
 
 app.post("/Login", async (req, res) => {
     const { email, password } = req.body
